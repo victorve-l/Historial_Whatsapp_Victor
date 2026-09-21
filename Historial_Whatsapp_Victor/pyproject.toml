@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "Analisis_Historial_Whatsapp"
+version = "0.0.1"
+description = "An\u00e1lisis exploratorio de datos (EDA) y procesamiento en formato tidy a partir del historial de mensajes de WhatsApp bajo la estructura Cookiecutter Data Science (CCDS)."
+authors = [
+  { name = "Victor De la Torre" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.12.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["Analisis_Historial_Whatsapp"]
+include = ["pyproject.toml", "Analisis_Historial_Whatsapp/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["Analisis_Historial_Whatsapp"]
+force-sort-within-sections = true
+
