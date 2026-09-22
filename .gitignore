@@ -1,5 +1,16 @@
-# Data
-/data/
+# Data: Ignorar el contenido de datos pero conservar la estructura de carpetas
+data/*
+!data/raw/
+!data/interim/
+!data/processed/
+!data/external/
+!data/**/.gitkeep
+
+# Ignorar archivos de datos específicos
+*.csv
+*.xlsx
+*.parquet
+*.txt
 
 # Mac OS-specific storage files
 .DS_Store
