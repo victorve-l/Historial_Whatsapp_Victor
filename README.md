@@ -5,16 +5,16 @@
 </a>
 
 ## 1. Introducción General al Proyecto
-Este proyecto consiste en descargar, procesar y analizar los mensajes pertenecientes a un chat personal de un grupo de WhatsApp. La finalidad de este proyecto es el adquirir experiencia en la ingesta, limpieza y manipulación de cadenas de caracteteres. Este proyecto forma parte del curso de Ingeniería de Características de la Maestría en Ciencia de Datos de la Universidad de Sonora (MCD). 
+Este proyecto consiste en descargar, procesar y analizar los mensajes pertenecientes a un chat personal de un grupo de WhatsApp. La finalidad de este proyecto es adquirir experiencia en la ingesta, limpieza y manipulación de cadenas de caracteres. Este proyecto forma parte del curso de Ingeniería de Características de la Maestría en Ciencia de Datos de la Universidad de Sonora (MCD). 
 
 A lo largo de este repositorio se abordan las siguientes etapas:
-* **Ingesta y estructuración:** Parseo de líneas y captura de mensajes multilínea mediante expresiones regulares (RegEx) para extraer marcas temporales, remitentes y contenido textual (notebook 1.0)
+* **Ingesta y estructuración:** Parseo de líneas y captura de mensajes multilínea mediante expresiones regulares (RegEx) para extraer marcas temporales, remitentes y contenido textual (notebook 1.0).
 * **Limpieza y transformación de datos:** Conversión de fechas a formato nativo `datetime64`, clasificación de cada tipo de mensaje (texto, notas de voz, stickers, multimedia o documentos) y anonimización de la identidad de los participantes (notebook 2.0). 
 * **Análisis exploratorio de datos (EDA):** Identificación del volumen de participación, dinámica temporal (días más activos, curva horaria y mapas de calor semanales) y distribuciones de longitud de mensajes. En esta parte, se realizó el procesamiento del lenguaje natural para identificar palabras y adjetivos del chat de whatsapp. 
 
 ## Anonimización de personajes
 
-Para mantener la privacidad de los usuarios del grupo, se anonimizaron los nombres de todos los usuarios. Se optó por cambiar el nombre de los usuarios por personajes de las películas de Shrek, seleccionando a los siguientes personajes: Shrek, Burro, Fiona, Lord Farquad, y Lobo de Sexo Dudoso.
+Para mantener la privacidad de los usuarios del grupo, se anonimizaron los nombres de todos los usuarios. Se optó por cambiar el nombre de los usuarios por personajes de las películas de Shrek, seleccionando a los siguientes personajes: Shrek, Burro, Fiona, Lord Farquaad y Lobo de Sexo Dudoso.
 
 <p align="center">
   <img src="reports/figures/shrek_personajes.jpg" alt="Figura del proyecto" width="800" />
@@ -77,15 +77,15 @@ Proyecto-Whatsapp/
 
 ## 3. Preguntas a responder en este trabajo:
 * ¿Cuál es el usuario que más mensajes envía?
-* ¿Cual es la frecuencia promedio de palabras por mensaje de texto de cada usuario?
+* ¿Cuál es la frecuencia promedio de palabras por mensaje de texto de cada usuario?
 * ¿Cuál es el usuario que más palabras envía? ¿Y el que envía más emojis? ¿Y el que envía más *stickers*?
-* ¿Que días de la semana se mandan más mensajes y cuales menos? ¿Hay un patron semanal? ¿Y por hora del día?
-* ¿Que palabras son las más usadas por cada usuario? ¿Y en general? ¿Que palabras son las más usadas en el grupo que no sean *stop words*? 
-*¿Cuales son los adjetivos más usados?
+* ¿Qué días de la semana se mandan más mensajes y cuáles menos? ¿Hay un patrón semanal? ¿Y por hora del día?
+* ¿Que palabras son las más usadas por cada usuario? ¿Y en general? ¿Qué palabras son las más usadas en el grupo que no sean *stop words*? 
+* ¿Cuáles son los adjetivos más usados?
 
 ## 4. Conclusiones
-En este proyecto, aprendí a estructurar mi proyecto mediante CCDS, el cual me parecer que es fundamental para poder organizar un proyecto de ciencia de datos y facilitar las etapas de cada proyecto. Además, aprendí la importancia del parseo de datos mediante el uso de expresiones regulares, las cuales son esenciales para poder dar identificar y filtrar cadenas de caracteres en los mensajes. Por otra parte, aprendí de manera práctica sobre el procesamiento de lenguaje natural al combinar stop words personalizadas junto con herramientas de lematización con la finalidad de diferenciar palabras genéricas y adjetivos en el chat de WhatsApp.
+En este proyecto, aprendí a estructurar mi proyecto mediante CCDS, el cual me parece que es fundamental para poder organizar un proyecto de ciencia de datos y facilitar las etapas de cada proyecto. Además, aprendí la importancia del parseo de datos mediante el uso de expresiones regulares, las cuales son esenciales para poder identificar y filtrar cadenas de caracteres en los mensajes. Por otra parte, aprendí de manera práctica sobre el procesamiento de lenguaje natural al combinar stop words personalizadas junto con herramientas de lematización con la finalidad de diferenciar palabras genéricas y adjetivos en el chat de WhatsApp.
 
-Personalmente, me sorprendió la variación de los mensajes a lo largo de cada día de la semana. En este proyecto, se observó que el jueves es el día qué más mensajes se envían. De manera similar, me pareció interasante las horas a las que los usuarios son más activos en el chat. Se observó que las horas donde más se envían mensajes es entre las 18 y 20 horas. ¿Tendrá esto que ver con que es una hora a la que la mayoría de los miembros del grupo ya no está trabajando? ¿Será la hora donde las personas del grupo deciden usar tiempo de ocio?
+Personalmente, me sorprendió la variación de los mensajes a lo largo de cada día de la semana. En este proyecto, se observó que el jueves es el día que más mensajes se envían. De manera similar, me parecieron interasantes las horas a las que los usuarios son más activos en el chat. Se observó que las horas en que más se envían mensajes son entre las 18 y 20 horas. ¿Tendrá esto que ver con que es una hora a la que la mayoría de los miembros del grupo ya no están trabajando? ¿Será la hora donde las personas del grupo deciden usar tiempo de ocio?
 
-Me gustaría realiar un análisis de sentimiento para evaluar la polaridad de los mensajes: positivos, negativos, etc. A su vez, me gustaría implementar algoritmos de modelado de temas para identificar cuáles son los temas principales de conversación del grupo.
+Me gustaría realizar un análisis de sentimiento para evaluar la polaridad de los mensajes: positivos, negativos, etc. A su vez, me gustaría implementar algoritmos de modelado de temas para identificar cuáles son los temas principales de conversación del grupo.
