@@ -73,6 +73,7 @@ Proyecto-Whatsapp/
     │   └── train.py             <- Code to train models
     │
     └── plots.py                 <- Code to create visualizations
+```
 
 ## 3. Preguntas a responder en este trabajo:
 * ¿Cuál es el usuario que más mensajes envía?
