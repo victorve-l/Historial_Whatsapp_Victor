@@ -17,7 +17,7 @@ A lo largo de este repositorio se abordan las siguientes etapas:
 Para mantener la privacidad de los usuarios del grupo, se anonimizaron los nombres de todos los usuarios. Se optó por cambiar el nombre de los usuarios por personajes de las películas de Shrek, seleccionando a los siguientes personajes: Shrek, Burro, Fiona, Lord Farquad, y Lobo de Sexo Dudoso.
 
 <p align="center">
-  <img src="reports/figures/shrek_personajes.jpg" alt="Figura del proyecto" width="500" />
+  <img src="reports/figures/shrek_personajes.jpg" alt="Figura del proyecto" width="800" />
 </p>
 
 La anonimización consistió en cambiar el nombre del remitente de cada mensaje, así como las menciones hechas a cada usuario dentro del chat. 
@@ -27,10 +27,6 @@ El repositorio fue organizado siguiendo el estándar canónico de **Cookiecutter
 
 ```text
 Proyecto-Whatsapp/
-
-## Project Organization
---------
-```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
@@ -63,22 +59,20 @@ Proyecto-Whatsapp/
 │
 └── Analisis_Historial_Whatsapp   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes Analisis_Historial_Whatsapp a Python module
+    ├── __init__.py              <- Makes Analisis_Historial_Whatsapp a Python module
     │
-    ├── config.py               <- Store useful variables and configuration
+    ├── config.py                <- Store useful variables and configuration
     │
-    ├── dataset.py              <- Scripts to download or generate data
+    ├── dataset.py               <- Scripts to download or generate data
     │
-    ├── features.py             <- Code to create features for modeling
+    ├── features.py              <- Code to create features for modeling
     │
-    ├── modeling                
+    ├── modeling                 
     │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
+    │   ├── predict.py           <- Code to run model inference with trained models          
+    │   └── train.py             <- Code to train models
     │
-    └── plots.py                <- Code to create visualizations
-```
---------
+    └── plots.py                 <- Code to create visualizations
 
 ## 3. Preguntas a responder en este trabajo:
 * ¿Cuál es el usuario que más mensajes envía?
