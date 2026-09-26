@@ -17,7 +17,7 @@ A lo largo de este repositorio se abordan las siguientes etapas:
 Para mantener la privacidad de los usuarios del grupo, se anonimizaron los nombres de todos los usuarios. Se optó por cambiar el nombre de los usuarios por personajes de las películas de Shrek, seleccionando a los siguientes personajes: Shrek, Burro, Fiona, Lord Farquad, y Lobo de Sexo Dudoso.
 
 <p align="center">
-  <img src="reports/figures/shrek_personajes.png" alt="Figura del proyecto" width="500" />
+  <img src="reports/figures/shrek_personajes.jpg" alt="Figura del proyecto" width="500" />
 </p>
 
 La anonimización consistió en cambiar el nombre del remitente de cada mensaje, así como las menciones hechas a cada usuario dentro del chat. 
@@ -29,7 +29,7 @@ El repositorio fue organizado siguiendo el estándar canónico de **Cookiecutter
 Proyecto-Whatsapp/
 
 ## Project Organization
-
+--------
 ```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
